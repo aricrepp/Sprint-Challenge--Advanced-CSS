@@ -1,1 +1,18 @@
-// Mixins Here
+// Mixins in here
+
+.center(@a) {
+  display: flex;
+  flex-direction: @a;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn(@a) {
+  .center(row);
+  background: @a;
+  color: white;
+  height: 40px;
+  width: 100px;
+  font-size: 2rem;
+  border-radius: 10px;
+}
